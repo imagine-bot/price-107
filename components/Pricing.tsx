@@ -44,7 +44,10 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes }) => {
         ))}
       </div>
       <div className="flex justify-center mt-10">
-        <button className="bg-purple-500 text-white px-4 py-2 rounded">Yahoo</button>
+        <button className="bg-purple-500 text-white px-4 py-2 rounded flex items-center">
+          Yahoo
+          <span className="material-icons text-yellow-500 ml-2">favorite</span>
+        </button>
       </div>
     </div>
   );
