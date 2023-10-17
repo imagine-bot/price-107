@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="font-bold font-impact">
       <h1>Welcome to our SaaS app!</h1>
       <Link href="/pricing">
         <a>Check out our pricing</a>
