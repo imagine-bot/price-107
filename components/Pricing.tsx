@@ -39,7 +39,8 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes }) => {
                 <li key={feature}>{feature}</li>
               ))}
             </ul>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded">{type.cta}</button>
+            <button className="bg-yellow-500 text-white px-4 py-2 rounded">{type.cta}</button>
+            <button className="bg-purple-500 text-white px-4 py-2 rounded mt-2">Yahoo</button>
           </div>
         ))}
       </div>
