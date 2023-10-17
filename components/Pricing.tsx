@@ -31,7 +31,7 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes }) => {
       </div>
       <div className="grid grid-cols-3 gap-4">
         {pricingTypes.map((type) => (
-          <div key={type.name} className="bg-white p-4 rounded shadow">
+          <div key={type.name} className="bg-white p-4 rounded shadow hover:bg-blue-100">
             <h2 className="text-2xl mb-2">{type.name}</h2>
             <p className="text-xl mb-4">${isAnnual ? type.price * 12 : type.price} / {isAnnual ? 'year' : 'month'}</p>
             <ul className="mb-4">
@@ -39,7 +39,9 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes }) => {
                 <li key={feature}>{feature}</li>
               ))}
             </ul>
-            <button className="bg-yellow-500 text-white px-4 py-2 rounded">{type.cta}</button>
+            <div className="mt-auto">
+              <button className="bg-yellow-500 text-white px-4 py-2 rounded">{type.cta}</button>
+            </div>
           </div>
         ))}
       </div>
