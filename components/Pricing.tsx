@@ -14,7 +14,7 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes }) => {
   const [isAnnual, setIsAnnual] = React.useState(false);
 
   return (
-    <div className="bg-gradient-to-r from-blue-200 to-blue-100 p-10">
+    <div className="bg-gradient-to-r from-blue-200 to-blue-100 p-10 font-bold font-impact">
       <div className="flex justify-center mb-10">
         <button
           className={`px-4 py-2 mr-2 ${isAnnual ? 'bg-blue-500 text-white' : 'bg-white text-blue-500'}`}
